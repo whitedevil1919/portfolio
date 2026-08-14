@@ -1,0 +1,133 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  height: 100%;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--spacing-sm);
+}
+
+.project-title {
+  font-family: var(--font-primary);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.project-desc {
+  color: var(--color-text-secondary);
+  font-size: 0.975rem;
+  line-height: 1.6;
+}
+
+.project-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-label {
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  letter-spacing: 0.5px;
+}
+
+.meta-value {
+  color: var(--color-text-primary);
+  font-size: 0.925rem;
+  line-height: 1.5;
+}
+
+.project-features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  padding-left: var(--spacing-xs);
+}
+
+.feature-item {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.feature-item-dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.project-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: auto;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-md);
+}
+
+.proj-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+
+.proj-btn.disabled {
+  background-color: transparent;
+  border: 1px dashed var(--color-border);
+  color: var(--color-text-secondary);
+  cursor: not-allowed;
+}
+
+.proj-btn.disabled:hover {
+  border-color: var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.proj-btn.active {
+  background-color: var(--color-accent-muted);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+.proj-btn.active:hover {
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+}
