@@ -108,6 +108,18 @@ export const portfolioData = {
         "[Will be updated soon]",
         "[Will be updated soon]"
       ]
+    },
+    {
+      id: "exp-sih",
+      company: "Smart India Hackathon (SIH)",
+      role: "Hackathon Participant",
+      duration: "Participant",
+      responsibilities: [
+        "Participated in the Smart India Hackathon, gaining practical exposure to problem-solving, teamwork, innovation, and developing technology-driven solutions."
+      ],
+      achievements: [],
+      certificate: "/BOLISETTY%20SRI%20NIKHIL.pdf",
+      image: "/images/sih_certificate.jpg"
     }
   ],
   education: [
