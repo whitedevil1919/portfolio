@@ -161,6 +161,6 @@ export const portfolioData = {
     heading: "Let's Build Something Great Together.",
     message: "Have an opportunity, project, or idea you'd like to discuss? Feel free to get in touch. I'm always interested in learning, building, and exploring new opportunities in technology.",
     email: "bolisettysrinikhil@gmail.com",
-    phone: "7207197744"
+    phone: "7207197755"
   }
 };
