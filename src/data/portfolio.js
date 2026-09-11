@@ -94,32 +94,15 @@ export const portfolioData = {
   ],
   experience: [
     {
-      id: "exp-1",
-      company: "[Coming Soon]",
-      role: "[Coming Soon]",
-      duration: "[Coming Soon]",
-      responsibilities: [
-        "[Will be updated soon]",
-        "[Will be updated soon]",
-        "[Will be updated soon]"
-      ],
-      achievements: [
-        "[Will be updated soon]",
-        "[Will be updated soon]",
-        "[Will be updated soon]"
-      ]
-    },
-    {
       id: "exp-sih",
       company: "Smart India Hackathon (SIH)",
       role: "Hackathon Participant",
       duration: "Participant",
       responsibilities: [
-        "Participated in the Smart India Hackathon, gaining practical exposure to problem-solving, teamwork, innovation, and developing technology-driven solutions."
+        "Participated in the Smart India Hackathon (SIH), collaborating in a team-based environment on problem-solving and technology-driven project development.",
+        "Engaged in brainstorming, collaborative teamwork, and practical solution development to address assigned problem statements."
       ],
-      achievements: [],
-      certificate: "/BOLISETTY%20SRI%20NIKHIL.pdf",
-      image: "/images/sih_certificate.jpg"
+      achievements: []
     }
   ],
   education: [
@@ -136,6 +119,13 @@ export const portfolioData = {
     }
   ],
   certifications: {
+    featured: {
+      id: "cert-sih",
+      title: "Smart India Hackathon (SIH)",
+      subtitle: "Participation Certificate",
+      image: "/images/sih_certificate.jpg",
+      certificatePdf: "/BOLISETTY%20SRI%20NIKHIL.pdf"
+    },
     list: [
       {
         id: "cert-1",

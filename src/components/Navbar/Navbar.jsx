@@ -2,21 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import './Navbar.css';
 
+const navItems = [
+  { label: 'Home', href: '#home', id: 'home' },
+  { label: 'About', href: '#about', id: 'about' },
+  { label: 'Skills', href: '#skills', id: 'skills' },
+  { label: 'Projects', href: '#projects', id: 'projects' },
+  { label: 'Experience', href: '#experience', id: 'experience' },
+  { label: 'Education', href: '#education', id: 'education' },
+  { label: 'Certifications', href: '#certifications', id: 'certifications' },
+  { label: 'Achievements', href: '#achievements', id: 'achievements' },
+  { label: 'Contact', href: '#contact', id: 'contact' },
+];
+
 export default function Navbar({ theme, toggleTheme }) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
-
-  const navItems = [
-    { label: 'Home', href: '#home', id: 'home' },
-    { label: 'About', href: '#about', id: 'about' },
-    { label: 'Skills', href: '#skills', id: 'skills' },
-    { label: 'Projects', href: '#projects', id: 'projects' },
-    { label: 'Experience', href: '#experience', id: 'experience' },
-    { label: 'Education', href: '#education', id: 'education' },
-    { label: 'Certifications', href: '#certifications', id: 'certifications' },
-    { label: 'Achievements', href: '#achievements', id: 'achievements' },
-    { label: 'Contact', href: '#contact', id: 'contact' },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {

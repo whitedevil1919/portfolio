@@ -1,16 +1,49 @@
 import React from 'react';
-import { Award, ShieldAlert } from 'lucide-react';
+import { Award, ExternalLink } from 'lucide-react';
 import { portfolioData } from '../../data/portfolio';
 import './Certifications.css';
 
 export default function Certifications() {
   const { certifications } = portfolioData;
+  const sih = certifications.featured || certifications.sihCertificate;
 
   return (
     <section id="certifications" className="certifications-section">
       <div className="container">
         <h2 className="section-title">Certifications</h2>
         <p className="section-subtitle">Technical certifications and credentials.</p>
+
+        {sih && (
+          <div className="card sih-certificate-card">
+            <div className="sih-certificate-header">
+              <h3 className="sih-certificate-title">
+                <Award size={20} style={{ color: 'var(--color-accent)' }} />
+                <span>{sih.title} — {sih.subtitle}</span>
+              </h3>
+              {(sih.image || sih.certificatePdf) && (
+                <a
+                  href={sih.image || sih.certificatePdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="sih-certificate-open-btn"
+                  title="View Certificate"
+                >
+                  <span>View Certificate</span>
+                  <ExternalLink size={15} />
+                </a>
+              )}
+            </div>
+
+            <div className="sih-certificate-image-wrapper">
+              <img
+                src={sih.image}
+                alt={`${sih.title} — ${sih.subtitle}`}
+                className="sih-certificate-image"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        )}
 
         <div className="certifications-grid">
           {certifications.list.map((cert) => (

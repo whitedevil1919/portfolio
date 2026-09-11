@@ -1,5 +1,4 @@
 import React from 'react';
-import { GraduationCap } from 'lucide-react';
 import { portfolioData } from '../../data/portfolio';
 import './Education.css';
 

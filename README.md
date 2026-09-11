@@ -1,12 +1,28 @@
-# Bolisetty Sri Nikhil - Developer Portfolio
+# Bolisetty Sri Nikhil — Developer Portfolio
 
-A professional, minimal, creative, and responsive developer portfolio website designed for Bolisetty Sri Nikhil. Built using React, Vite, and modular Vanilla CSS, featuring full dark and light mode themes.
+[![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8.2-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Deploy to GitHub Pages](https://github.com/whitedevil1919/portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/whitedevil1919/portfolio/actions/workflows/deploy.yml)
 
-## 🚀 Technologies Used
+A professional, minimal, creative, and fully responsive developer portfolio website designed for **Bolisetty Sri Nikhil**. Built with React 19, Vite 8, and modular Vanilla CSS with full dark/light mode theming and seamless GitHub Pages deployment.
 
-- **Framework:** React 19 + Vite 8
-- **Styling:** Modular Vanilla CSS with responsive CSS Custom Properties
-- **Icons:** `lucide-react` for modern, lightweight developer icons
+---
+
+## 🚀 Live Demo
+
+- **GitHub Pages:** [whitedevil1919.github.io/portfolio](https://whitedevil1919.github.io/portfolio)
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend Library:** React 19
+- **Build Tool & Dev Server:** Vite 8
+- **Styling:** Modular Vanilla CSS with responsive CSS Custom Properties & Design Tokens
+- **Icons:** `lucide-react`
+- **Linting:** `oxlint` (fast static code analysis)
+- **Deployment:** GitHub Actions + GitHub Pages
 
 ---
 
@@ -14,146 +30,122 @@ A professional, minimal, creative, and responsive developer portfolio website de
 
 ```text
 portfolio/
-│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # Automated GitHub Pages CI/CD workflow
 ├── public/
-│   ├── images/
-│   │   └── profile/        # Location for real profile photo
-│   ├── icons/              # Site icons and favicons
-│   └── resume/             # Location for PDF resume
-│
+│   ├── images/             # Profile photos & certificate images
+│   ├── icons.svg           # Scalable vector icons
+│   ├── favicon.svg         # Modern vector favicon
+│   └── BOLISETTY SRI NIKHIL.pdf # SIH Participation Certificate PDF
 ├── src/
 │   ├── components/
-│   │   ├── Navbar/         # Navigation & theme toggle
-│   │   ├── Hero/           # Headline & profile placeholder
-│   │   ├── About/          # Biography & career goal & resume
-│   │   ├── Skills/         # Categorized skills layout
-│   │   ├── Projects/       # Reusable project case study card
+│   │   ├── Navbar/         # Header navigation & theme toggle
+│   │   ├── Hero/           # Headline & profile presentation
+│   │   ├── About/          # Biography, focus areas, career goal & resume
+│   │   ├── Skills/         # Categorized technical skills
+│   │   ├── Projects/       # Project case study cards
 │   │   ├── Experience/     # Work experience timeline
-│   │   ├── Education/      # Degrees & subjects card
-│   │   ├── Certifications/ # Certifications placeholders
-│   │   ├── Achievements/   # Milestones placeholders
-│   │   ├── Contact/        # Message form & mail/phone links
-│   │   └── Footer/         # Navigation links & socials
-│   │
+│   │   ├── Education/      # Academic degrees & coursework
+│   │   ├── Certifications/ # Technical credentials & certificate image showcase
+│   │   ├── Achievements/   # Milestones & contests
+│   │   ├── Contact/        # Contact form & social channels
+│   │   └── Footer/         # Footer links & copyright
 │   ├── data/
-│   │   └── portfolio.js    # CENTRAL DATA FILE (Only edit this to update content!)
-│   │
-│   ├── assets/             # Shared local assets (React icons/logos)
-│   │
+│   │   └── portfolio.js    # Central data file (content updates go here!)
 │   ├── styles/
-│   │   ├── globals.css     # Base reset & layouts
-│   │   └── variables.css   # Color palette (Light/Dark mode)
-│   │
-│   ├── App.jsx             # App layout & theme coordination
-│   └── main.jsx            # Entrypoint
-│
-├── .gitignore
-├── README.md
-├── package.json
-└── vite.config.js
+│   │   ├── globals.css     # CSS reset, typography, layout utilities
+│   │   └── variables.css   # Color palette & theme tokens (dark/light)
+│   ├── App.jsx             # Main layout & theme coordination
+│   ├── main.jsx            # Application entry point
+│   └── index.css           # Root styles
+├── .gitignore              # Complete Git ignore specifications
+├── .oxlintrc.json          # Oxlint configuration
+├── index.html              # HTML shell with Open Graph & SEO meta tags
+├── LICENSE                 # MIT Open Source License
+├── package.json            # Project dependencies and npm scripts
+├── README.md               # Project documentation
+└── vite.config.js          # Vite build configuration (base: './')
 ```
 
 ---
 
-## 💻 Installation & Setup
+## 💻 Getting Started
 
-Ensure you have [Node.js](https://nodejs.org/) installed.
+### Prerequisites
 
-1. **Install dependencies:**
+- [Node.js](https://nodejs.org/) (version 18 or higher recommended)
+- [Git](https://git-scm.com/)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/whitedevil1919/portfolio.git
+   cd portfolio
+   ```
+
+2. **Install dependencies:**
    ```bash
    npm install
    ```
 
-2. **Run in development mode (local host):**
+3. **Start the local development server:**
    ```bash
    npm run dev
    ```
    Open `http://localhost:5173` in your browser.
 
-3. **Build for production:**
+4. **Run the linter:**
+   ```bash
+   npm run lint
+   ```
+
+5. **Build for production:**
    ```bash
    npm run build
    ```
-   This generates optimized, production-ready static assets in the `/dist` directory.
+   Generates optimized static assets in the `dist/` directory.
 
-4. **Preview production build locally:**
+6. **Preview the production build locally:**
    ```bash
    npm run preview
    ```
 
 ---
 
-## 🛠️ How to Customize Your Content
+## ⚙️ How to Update Content
 
-All data is separated from the UI components. To update any text, links, or sections, edit the data file:
-📂 **[src/data/portfolio.js](file:///c:/Users/B.Sri%20Nikhil/practice/src/data/portfolio.js)**
+All content is decoupled from UI code and located in a single centralized file:
+📂 **`src/data/portfolio.js`**
 
-### 1. Replacing the Profile Photo
-1. Place your professional photograph (e.g., `srinikhil.jpg`) into:
-   📂 `public/images/profile/srinikhil.jpg`
-2. Update the `profilePhoto` field in [src/data/portfolio.js](file:///c:/Users/B.Sri%20Nikhil/practice/src/data/portfolio.js):
-   ```javascript
-   personalInfo: {
-     ...
-     profilePhoto: "/images/profile/srinikhil.jpg",
-   }
-   ```
-   The website will automatically hide the placeholder silhouette and display your photo inside the styled hero frame.
-
-### 2. Attaching Your Resume
-1. Place your resume PDF (e.g., `resume.pdf`) into:
-   📂 `public/resume/resume.pdf`
-2. Open [src/components/About/About.jsx](file:///c:/Users/B.Sri%20Nikhil/practice/src/components/About/About.jsx), change the disabled state of the button and link it to the file path:
-   ```jsx
-   // In About.jsx:
-   // Change:
-   <button className="resume-btn" disabled ...>
-   
-   // To an anchor link:
-   <a href="/resume/resume.pdf" download className="resume-btn">
-   ```
-3. Update the button text in [src/data/portfolio.js](file:///c:/Users/B.Sri%20Nikhil/practice/src/data/portfolio.js) under `about`:
-   ```javascript
-   resumePlaceholder: "Download Resume"
-   ```
-
-### 3. Adding New Projects
-To add a new project or replace the placeholder, add a new object to the `projects` array in [src/data/portfolio.js](file:///c:/Users/B.Sri%20Nikhil/practice/src/data/portfolio.js):
-```javascript
-{
-  id: "project-unique-id",
-  name: "My Awesome Project",
-  shortDescription: "A short summary of what the project does.",
-  problemPurpose: "To solve problem X by doing Y.",
-  contribution: "Designed UI/UX and built backend REST APIs.",
-  technologies: "React, Node.js, Express, MongoDB",
-  keyFeatures: [
-    "Feature 1 details",
-    "Feature 2 details",
-    "Feature 3 details"
-  ],
-  github: "https://github.com/your-username/repo-name",
-  liveDemo: "https://my-demo-link.com"
-}
-```
-If you omit or leave the `github` or `liveDemo` as `"[Coming Soon]"`, the link button will gracefully render as disabled.
-
-### 4. Updating Certifications & Achievements
-Edit the `certifications` list or `achievements` array in [src/data/portfolio.js](file:///c:/Users/B.Sri%20Nikhil/practice/src/data/portfolio.js). The UI updates dynamically.
+- **Personal Details:** Update `personalInfo` (name, title, contact information).
+- **Work Experience:** Modify `experience` array.
+- **Certifications:** Update `certifications.featured` or `certifications.list`.
+- **Projects:** Add new projects to the `projects` array.
+- **Skills:** Add or edit skills in the `skills` array.
 
 ---
 
-## 🌐 Deployment Instructions
+## 🌐 GitHub Pages Deployment
 
-Since this is a standard React + Vite SPA, you can deploy the generated `/dist` folder to any static hosting provider:
+This repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically builds and deploys the portfolio on every push to the `main` branch.
 
-### Vercel
-1. Install Vercel CLI: `npm install -g vercel`
-2. Run: `vercel`
+### Enabling GitHub Pages:
+1. Go to your repository on GitHub: **`whitedevil1919/portfolio`**.
+2. Click **Settings** > **Pages** (in the left sidebar).
+3. Under **Build and deployment** > **Source**, select **GitHub Actions**.
+4. Push your changes to `main`:
+   ```bash
+   git add .
+   git commit -m "Update portfolio"
+   git push origin main
+   ```
+5. GitHub will run the workflow and publish your site at:
+   `https://whitedevil1919.github.io/portfolio`
 
-### Netlify
-1. Drag and drop the `dist/` folder into your Netlify dashboard, or:
-2. Use Netlify CLI: `netlify deploy`
+---
 
-### GitHub Pages
-Configure your repository build settings to run `npm run build` and point the publishing directory to `dist/`.
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).

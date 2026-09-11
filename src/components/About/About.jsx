@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, Target, Award } from 'lucide-react';
+import { FileText, Target } from 'lucide-react';
 import { portfolioData } from '../../data/portfolio';
 import './About.css';
 

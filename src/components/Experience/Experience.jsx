@@ -49,48 +49,6 @@ export default function Experience() {
                   </div>
                 )}
               </div>
-
-              {exp.certificate && (
-                <div className="certificate-container">
-                  <span className="detail-block-title">Participation Certificate</span>
-                  <div className="certificate-viewer">
-                    {exp.image ? (
-                      <a
-                        href={exp.certificate}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="certificate-image-link"
-                        title="Click to view PDF certificate"
-                      >
-                        <img
-                          src={exp.image}
-                          alt="Smart India Hackathon Participation Certificate"
-                          className="certificate-img"
-                          loading="lazy"
-                        />
-                      </a>
-                    ) : (
-                      <iframe
-                        src={exp.certificate}
-                        title="Smart India Hackathon Participation Certificate"
-                        className="certificate-iframe"
-                        width="100%"
-                        loading="lazy"
-                      ></iframe>
-                    )}
-                  </div>
-                  <div className="certificate-fallback">
-                    <a
-                      href={exp.certificate}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="certificate-fallback-link"
-                    >
-                      Open Certificate
-                    </a>
-                  </div>
-                </div>
-              )}
             </div>
           ))}
         </div>
