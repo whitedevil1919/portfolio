@@ -4,7 +4,7 @@ export const portfolioData = {
     professionalTitle: "Full-Stack Developer | UI/UX Designer | Software Developer",
     location: "Vijayawada, India",
     email: "bolisettysrinikhil@gmail.com",
-    phone: "7207197744",
+    phone: "7207197755",
     profilePhoto: "/images/profile/srinikhil.jpg",
   },
   hero: {
